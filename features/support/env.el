@@ -9,6 +9,9 @@
 (add-to-list 'load-path (expand-file-name "espuds" multiple-cursors-util-path))
 (add-to-list 'load-path (expand-file-name "vendor" multiple-cursors-util-path))
 
+(require 'undercover)
+(undercover "*.el")
+
 (require 'multiple-cursors)
 (require 'espuds)
 (require 'ert)
